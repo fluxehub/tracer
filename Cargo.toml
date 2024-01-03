@@ -1,0 +1,17 @@
+[package]
+name = "tracer"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+winit = "0.29"
+raw-window-handle = "0.6"
+lazy_static = "1.4"
+nalgebra = "0.32"
+ouroboros = "0.18"
+
+[dependencies.windows]
+version = "0.52"
+features = ["Win32_Graphics_Gdi", "Win32_System_LibraryLoader", "Win32_UI_WindowsAndMessaging", "Win32_Foundation", "Win32_Graphics_Dxgi_Common", "Win32_Graphics_Direct3D12", "Win32_Graphics_Direct3D", "Win32_Graphics_Hlsl", "Win32_System_Diagnostics_Debug", "Win32_System_SystemInformation", "Win32_System_Threading", "Win32_Security"]
